@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NewsQuasar/static/css/main.31d6cfe0.css",
+    "main.js": "/NewsQuasar/static/js/main.3ecd099a.js",
+    "static/js/787.51b9f83d.chunk.js": "/NewsQuasar/static/js/787.51b9f83d.chunk.js",
+    "static/media/loading.gif": "/NewsQuasar/static/media/loading.0616acfb37e5ae92809d.gif",
+    "index.html": "/NewsQuasar/index.html",
+    "main.3ecd099a.js.map": "/NewsQuasar/static/js/main.3ecd099a.js.map",
+    "787.51b9f83d.chunk.js.map": "/NewsQuasar/static/js/787.51b9f83d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.3ecd099a.js"
+  ]
+}
