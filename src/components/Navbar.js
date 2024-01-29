@@ -5,9 +5,9 @@ export class Navbar extends Component {
   render() {
     return (
       <>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg bg-dark">
           <div className="container-fluid">
-            <Link className="navbar-brand" to="/">News Quasar</Link>
+            <Link className="navbar-brand text-white" to="/">News Quasar</Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -21,13 +21,13 @@ export class Navbar extends Component {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item"><Link className="nav-link" aria-current="page" to="/">Home</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/business"> Business</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/entertainment"> Entertainment</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/health"> Health</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/science"> Science</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/sports"> Sports</Link></li>
-                <li className="nav-item"><Link className="nav-link" to="/technology"> Technology</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white" aria-current="page" to="/">Home</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white" to="/business"> Business</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white" to="/entertainment"> Entertainment</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white" to="/health"> Health</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white" to="/science"> Science</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white" to="/sports"> Sports</Link></li>
+                <li className="nav-item"><Link className="nav-link text-white" to="/technology"> Technology</Link></li>
               </ul>
             </div>
           </div>
