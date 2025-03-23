@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import NewsItem from "./NewsItem";
 import Spinner from "./Spinner";
-import PropTypes from 'prop-types'
-
+import PropTypes from 'prop-types';
+import sampleOutput from './SampleOutput.json';
 
 export class News extends Component {
   static defaultProps = {
@@ -32,12 +32,13 @@ export class News extends Component {
     return string.replace(/\b\w/g, (match) => match.toUpperCase());
   };
 
-  //Function to fetch the data from NewsAPI
+  //Function to fetch the data from SampleOutput.json
   async updateNews(){
-    const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=7b8f4fb3bb8842a48bde8b12e49aeff6&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+    // const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=7b8f4fb3bb8842a48bde8b12e49aeff6&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     this.setState({loading:true});
-    let data = await fetch(url);
-    let parsedData = await data.json();
+    // let data = await fetch(url);
+    // let parsedData = await data.json();
+    let parsedData = sampleOutput; // Fetch data from SampleOutput.json
     this.setState({
       articles: parsedData.articles,
       totalResults: parsedData.totalResults,
